@@ -28,8 +28,8 @@ SECRET_KEY =\
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1'] # MARK: - Add application url here
-CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1'] # and here
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'k69qnrp6s7-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai'] # MARK: - Add application url here
+CSRF_TRUSTED_ORIGINS = ['http://localhost:8000', 'http://127.0.0.1, https://k69qnrp6s7-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai'] # and here
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [],
