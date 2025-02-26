@@ -1,7 +1,6 @@
 # Uncomment the following imports before adding the Model code
 
 from django.db import models
-from django.utils.timezone import now
 from django.core.validators import MaxValueValidator, MinValueValidator
 
 
@@ -18,6 +17,7 @@ class CarMake(models.Model):
 
     def __str__(self):
         return self.name
+
 
 # <HINT> Create a Car Model model `class CarModel(models.Model):`:
 # - Many-To-One relationship to Car Make model (One Car Make has many
@@ -44,4 +44,3 @@ class CarModel(models.Model):
     ])
 
     make = models.ForeignKey(CarMake, on_delete=models.CASCADE)
-    
